@@ -36,7 +36,7 @@ DIR_leads=['ECG_' code_CH_leads];
 NORM_chk=1;
 
 
-  n_MAX_rec=400;
+  n_MAX_rec=1000;
   while n_MAX_rec>0
     [list_ok, files_ok, full_files_ok ,List_Diagn_ok]=select_train_rec_leads(dir_CINC_DL_IMG,DIR_leads,n_MAX_rec,0,NORM_chk);
     n_MAX_rec=0;
