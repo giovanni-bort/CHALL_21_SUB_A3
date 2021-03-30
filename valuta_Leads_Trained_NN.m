@@ -120,9 +120,10 @@ if(OPT_IMG_F==2),
   T_4b=toc;
   VVq=F1(Xm,Ym);
   T_5b=toc;
-  IM3=imagesc(VVq);
+% IM3=imagesc(VVq);
   k_jet=256;
-  im_ECG = ind2rgb(im2uint8(rescale(IM3.CData)),jet(k_jet)); %(128));
+%   im_ECG = ind2rgb(im2uint8(rescale(IM3.CData)),jet(k_jet)); %(128));
+  im_ECG = ind2rgb(im2uint8(rescale(VVq)),jet(k_jet)); %(128));
   % % %  imwrite(imresize(im,[224 224]),'NEWIMAGE2.jpg');
   
 end %---------- OPT_IMG_F = 2
